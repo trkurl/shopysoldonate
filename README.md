@@ -1,3 +1,4 @@
+<img src="https://solanapay.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fsolanapay-logo.e34e7b7f.svg&w=256&q=75" />
 <br />
 <div align="center">
   <a href="https://fundzkickstarter.vercel.app/">
@@ -19,8 +20,10 @@
 
 ## About The Project
 
-This app is built on top of Solana Blockchain to showcase my skills in the web3
-world. 🌏
+### Welcome  
+[TR] Shopysoldonate Açıklama: Solana bağış uygulaması, Phantom cüzdanızı bağlayarak sol ile bağış yapabileceğiniz bir platformdur. Bu uygulamada sadece bağış yapmakla kalmayıp eğer ihtiyacınız varsa sol ile insanlardan bağış da toplayabilirsiniz. Bunun için bağış ilanı vermeniz yeterli olacaktır. Verdiğiniz ilan kendi belirlediğiz tarihe kadar geçerli olacaktır. Bu ilan süresi dolunca insanlar size bağış yapamayacak,aynı şekilde sizde süresi dolmuş ilanlara bağışta bulunamayacaksınız.Program Rust dili ile yazılmış olup Frond-end kısmı Javascript ile yazılmıştır.Herkese bol bağışlar :) 
+[EN] Shopysoldonate Description: Solana donation application is a platform where you can donate with sol by connecting your Phantom wallet. In this application, you can not only donate, but also collect donations from people with the left if you need it. All you have to do is make a donation. Your ad will be valid until the date you specify. When this ad expires, people will not be able to donate to you, and you will not be able to donate to expired adverts. The program is written in Rust language and the Frond-end part is written in Javascript. Lots of donations to everyone :)
+
 
 
 
