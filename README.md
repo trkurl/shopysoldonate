@@ -4,17 +4,14 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Fundz</h3>
+<h3 align="center">ShopySol CrowdFunding</h3>
 
   <p align="center">
     Web3 Crowdfunding Platform
+    <br /> 
     <br />
-    <a href="https://github.com/iamyxsh/solana-crowdfunding/tree/master/programs/solana-crowdfunding"><strong>Explore the solana prgram</strong></a>
     <br />
-    <br />
-    <a href="https://fundzkickstarter.vercel.app/">View Demo</a>
-    ·
-    <a href="https://github.com/iamyxsh/solana-crowdfunding/issues">Report Bug</a>
+   
   </p>
 </div>
 
@@ -22,12 +19,10 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][homepage]](https://fundzkickstarter.vercel.app/)
-
 This app is built on top of Solana Blockchain to showcase my skills in the web3
 world. 🌏
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ### Built With
 
@@ -35,7 +30,7 @@ world. 🌏
 - [![Tailwind][tailwind]][tailwind-url]
 - [![Rust][rust]][rust-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- GETTING STARTED -->
 
@@ -129,3 +124,4 @@ Yash Sharma - iamyxsh@icloud.com
 [rust]:
 	https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white
 [rust-url]: https://www.rust-lang.org/
+
