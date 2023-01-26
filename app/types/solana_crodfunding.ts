@@ -1,0 +1,333 @@
+export type SolanaCrowdfunding = {
+	version: "0.1.0"
+	name: "solana_crowdfunding"
+	instructions: [
+		{
+			name: "create"
+			accounts: [
+				{
+					name: "project"
+					isMut: true
+					isSigner: false
+				},
+				{
+					name: "user"
+					isMut: true
+					isSigner: true
+				},
+				{
+					name: "systemProgram"
+					isMut: false
+					isSigner: false
+				}
+			]
+			args: [
+				{
+					name: "goal"
+					type: "u64"
+				},
+				{
+					name: "deadline"
+					type: "u64"
+				},
+				{
+					name: "name"
+					type: "string"
+				}
+			]
+		},
+		{
+			name: "donate"
+			accounts: [
+				{
+					name: "project"
+					isMut: true
+					isSigner: false
+				},
+				{
+					name: "user"
+					isMut: true
+					isSigner: true
+				},
+				{
+					name: "systemProgram"
+					isMut: false
+					isSigner: false
+				}
+			]
+			args: [
+				{
+					name: "amount"
+					type: "u64"
+				}
+			]
+		},
+		{
+			name: "withdraw"
+			accounts: [
+				{
+					name: "project"
+					isMut: true
+					isSigner: false
+				},
+				{
+					name: "user"
+					isMut: true
+					isSigner: true
+				}
+			]
+			args: []
+		}
+	]
+	accounts: [
+		{
+			name: "project"
+			type: {
+				kind: "struct"
+				fields: [
+					{
+						name: "name"
+						type: "string"
+					},
+					{
+						name: "goal"
+						type: "u64"
+					},
+					{
+						name: "donatedAmount"
+						type: "u64"
+					},
+					{
+						name: "donators"
+						type: {
+							vec: "publicKey"
+						}
+					},
+					{
+						name: "donations"
+						type: {
+							vec: "u64"
+						}
+					},
+					{
+						name: "deadline"
+						type: "u64"
+					},
+					{
+						name: "auth"
+						type: "publicKey"
+					}
+				]
+			}
+		}
+	]
+	errors: [
+		{
+			code: 6000
+			name: "NameTooLong"
+			msg: "Name should be of 15 characters or less."
+		},
+		{
+			code: 6001
+			name: "StoryTooLong"
+			msg: "Story should be of 15 characters or less."
+		},
+		{
+			code: 6002
+			name: "DeadlineInThePast"
+			msg: "Deadline for this should be in future."
+		},
+		{
+			code: 6003
+			name: "GoalIsZero"
+			msg: "Goal amount should be greater than zero."
+		},
+		{
+			code: 6004
+			name: "DonationIsZero"
+			msg: "Donation amount should be greater than zero."
+		},
+		{
+			code: 6005
+			name: "GoalNotReached"
+			msg: "Goal for this project has not been reached yet."
+		},
+		{
+			code: 6006
+			name: "DeadlineNotOver"
+			msg: "Deadline for this project is not over yet."
+		},
+		{
+			code: 6007
+			name: "UserNotOwner"
+			msg: "You are not the owner of this project."
+		}
+	]
+}
+
+export const IDL: SolanaCrowdfunding = {
+	version: "0.1.0",
+	name: "solana_crowdfunding",
+	instructions: [
+		{
+			name: "create",
+			accounts: [
+				{
+					name: "project",
+					isMut: true,
+					isSigner: false,
+				},
+				{
+					name: "user",
+					isMut: true,
+					isSigner: true,
+				},
+				{
+					name: "systemProgram",
+					isMut: false,
+					isSigner: false,
+				},
+			],
+			args: [
+				{
+					name: "goal",
+					type: "u64",
+				},
+				{
+					name: "deadline",
+					type: "u64",
+				},
+				{
+					name: "name",
+					type: "string",
+				},
+			],
+		},
+		{
+			name: "donate",
+			accounts: [
+				{
+					name: "project",
+					isMut: true,
+					isSigner: false,
+				},
+				{
+					name: "user",
+					isMut: true,
+					isSigner: true,
+				},
+				{
+					name: "systemProgram",
+					isMut: false,
+					isSigner: false,
+				},
+			],
+			args: [
+				{
+					name: "amount",
+					type: "u64",
+				},
+			],
+		},
+		{
+			name: "withdraw",
+			accounts: [
+				{
+					name: "project",
+					isMut: true,
+					isSigner: false,
+				},
+				{
+					name: "user",
+					isMut: true,
+					isSigner: true,
+				},
+			],
+			args: [],
+		},
+	],
+	accounts: [
+		{
+			name: "project",
+			type: {
+				kind: "struct",
+				fields: [
+					{
+						name: "name",
+						type: "string",
+					},
+					{
+						name: "goal",
+						type: "u64",
+					},
+					{
+						name: "donatedAmount",
+						type: "u64",
+					},
+					{
+						name: "donators",
+						type: {
+							vec: "publicKey",
+						},
+					},
+					{
+						name: "donations",
+						type: {
+							vec: "u64",
+						},
+					},
+					{
+						name: "deadline",
+						type: "u64",
+					},
+					{
+						name: "auth",
+						type: "publicKey",
+					},
+				],
+			},
+		},
+	],
+	errors: [
+		{
+			code: 6000,
+			name: "NameTooLong",
+			msg: "Name should be of 15 characters or less.",
+		},
+		{
+			code: 6001,
+			name: "StoryTooLong",
+			msg: "Story should be of 15 characters or less.",
+		},
+		{
+			code: 6002,
+			name: "DeadlineInThePast",
+			msg: "Deadline for this should be in future.",
+		},
+		{
+			code: 6003,
+			name: "GoalIsZero",
+			msg: "Goal amount should be greater than zero.",
+		},
+		{
+			code: 6004,
+			name: "DonationIsZero",
+			msg: "Donation amount should be greater than zero.",
+		},
+		{
+			code: 6005,
+			name: "GoalNotReached",
+			msg: "Goal for this project has not been reached yet.",
+		},
+		{
+			code: 6006,
+			name: "DeadlineNotOver",
+			msg: "Deadline for this project is not over yet.",
+		},
+		{
+			code: 6007,
+			name: "UserNotOwner",
+			msg: "You are not the owner of this project.",
+		},
+	],
+}

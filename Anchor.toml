@@ -1,0 +1,25 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+solana_crowdfunding = "Dvdcd6aqYia16SG2GvtCb2cxsFJNR3qDrMBdW18CJWHU"
+[programs.devnet]
+solana_crowdfunding = "Dvdcd6aqYia16SG2GvtCb2cxsFJNR3qDrMBdW18CJWHU"
+
+[registry]
+url = "https://api.apr.dev"
+
+# [provider]
+# cluster = "localnet"
+# wallet = "./keypair/keypair.json"
+
+[provider]
+cluster = "devnet"
+wallet = "/Users/tarık/.config/solana/id.json"
+
+
+
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+tdd = "watch -p '**/*.ts' -p '**/*.rs' -c 'anchor test'"
