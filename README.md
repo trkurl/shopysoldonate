@@ -66,7 +66,7 @@ You will need a few things set up before you can play around.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/iamyxsh/solana-crowdfunding
+   git clone(https://github.com/trkurl/shopysoldonate.git)
    ```
 2. Install NPM packages
    ```sh
@@ -92,22 +92,20 @@ then withdraw to your own wallet.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 - Connect your wallet
-  [![Connect Wallet][connect-wallet]](https://fundzkickstarter.vercel.app/)
-
+ 
 - Create your project
-  [![Create Project][create-project]](https://fundzkickstarter.vercel.app/create)
+ 
 
 - Fund a project
-  [![Fund Project][fund-project]](https://fundzkickstarter.vercel.app/project?key=BTrespkCHNU2FkErRZSpZSqk1Lt8HZDgXZqJFPc88Vz5)
+ 
 
 - Withdraw the SOL
-  [![Withdraw SOL][withdraw-sol]](https://fundzkickstarter.vercel.app/profile)
-
+  
 <!-- CONTACT -->
 
 ## Contact
 
-Yash Sharma - iamyxsh@icloud.com
+Tarık URAL - tarik_ural@outlook.com
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
